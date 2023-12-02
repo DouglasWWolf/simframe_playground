@@ -976,7 +976,7 @@
         </spirit:wire>
       </spirit:port>
       <spirit:port>
-        <spirit:name>METACOMMAND</spirit:name>
+        <spirit:name>MC_FIXED</spirit:name>
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
