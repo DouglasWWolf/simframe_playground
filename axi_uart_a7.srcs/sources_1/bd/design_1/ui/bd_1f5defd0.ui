@@ -24,7 +24,7 @@ preplace inst axi_gpio_inputs -pg 1 -lvl 4 -x 1000 -y 60 -defaultsOSRD -pinDir S
 preplace inst axi_gpio_outputs -pg 1 -lvl 4 -x 1000 -y 520 -defaultsOSRD -pinDir S_AXI left -pinY S_AXI 0L -pinDir GPIO right -pinY GPIO 0R -pinDir s_axi_aclk left -pinY s_axi_aclk 20L -pinDir s_axi_aresetn left -pinY s_axi_aresetn 40L
 preplace inst simulator -pg 1 -lvl 4 -x 1000 -y 330 -swap {0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 46 41 42 43 44 45 40 47 48 49 50 51 52 53} -defaultsOSRD -pinDir S_AXI_SF left -pinY S_AXI_SF 0L -pinDir S_AXI_SHIM left -pinY S_AXI_SHIM 20L -pinDir AXIS_TX1 right -pinY AXIS_TX1 60R -pinDir AXIS_TX0 right -pinY AXIS_TX0 40R -pinDir clk left -pinY clk 40L -pinDir resetn left -pinY resetn 60L
 preplace inst axi_uart_bridge -pg 1 -lvl 4 -x 1000 -y 200 -defaultsOSRD -pinDir M_AXI left -pinY M_AXI 0L -pinDir UART right -pinY UART 0R -pinDir aclk left -pinY aclk 20L -pinDir aresetn left -pinY aresetn 40L
-preplace inst data_sink -pg 1 -lvl 5 -x 1220 -y 370 -swap {0 1 2 3 4 5 6 7 8 9 10 11 13 12} -defaultsOSRD -pinDir AXIS_RX0 left -pinY AXIS_RX0 0L -pinDir AXIS_RX1 left -pinY AXIS_RX1 20L -pinDir clk left -pinY clk 90L -pinDir resetn left -pinY resetn 70L
+preplace inst data_sink -pg 1 -lvl 5 -x 1220 -y 370 -swap {0 1 2 3 4 5 6 7 8 9 11 10} -defaultsOSRD -pinDir AXIS_RX0 left -pinY AXIS_RX0 0L -pinDir AXIS_RX1 left -pinY AXIS_RX1 20L -pinDir clk left -pinY clk 90L -pinDir resetn left -pinY resetn 70L
 preplace netloc clk_in1_0_1 1 0 1 NJ 520
 preplace netloc ext_reset_in_0_1 1 0 2 NJ 580 NJ
 preplace netloc proc_sys_reset_0_peripheral_aresetn 1 2 3 N 600 870 440 N
